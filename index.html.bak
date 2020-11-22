@@ -13,7 +13,7 @@
     <section id="header">
       <header> <span class="image avatar"><img src="images/IMG_3430-3.png" alt="me"
             title="me"></span>
-        <h4 id="logo" style="width: 299px;"><a href="#"><span style="color: #000400;">Harold
+        <h4 id="logo" ><a href="#"><span style="color: #000400;">Harold
               A. Peña-Herazo</span><br>
           </a></h4>
         <p>Ph.D. in Physics &amp; Astrophysics</p>
