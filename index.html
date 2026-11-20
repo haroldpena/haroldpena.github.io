@@ -1,184 +1,1200 @@
 <!DOCTYPE html>
-<!--
-	Read Only by HTML5 UP	html5up.net | @ajlkn	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)-->
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Dr. Harold A. Peña Herazo </title>
-            
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harold A. Peña Herazo, Ph.D. | Physicist, Astronomer, and Data Scientist</title>
+  <meta name="description" content="Ph.D. in Physics & Astrophysics with 8+ years developing automated data processing pipelines, analyzing complex datasets, and diagnosing instrument performance." />
+  
+  <!-- Open Graph / Meta for Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Harold A. Peña Herazo, Ph.D. | Physicist, Astronomer, and Data Scientist" />
+  <meta property="og:description" content="Ph.D. in Physics & Astrophysics with 8+ years developing automated data processing pipelines, analyzing complex datasets, and diagnosing instrument performance." />
+  <meta property="og:url" content="https://haroldpena.github.io" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="assets/css/main.css">
-  </head>
-  <body class="is-preload">
-    <!-- Header -->
-    <section id="header">
-      <header> <span class="image avatar"><img src="images/IMG_3430-3.jp2" alt="me"
-            title="me"></span>
-        <h4 id="logo"><a href="#"><span style="color: #000400;">Harold A.
-              Peña-Herazo</span><br>
-          </a></h4>
-        <p>Ph.D. in Physics &amp; Astrophysics</p>
-        <p>Astronomer at JCMT</p>
-      </header>
-      <nav id="nav">
-        <ul>
-          <li><a href="#one" class="active">About</a></li>
-          <li><a href="#two">Education</a></li>
-          <li><a href="#three">Skills &amp; Published Articles</a></li>
-          <li><a href="#four">Research Highlights</a></li>
-          <li><a href="#five">Contact</a></li>
-        </ul>
+  <!-- Favicon (Clean SVG Teal Dot / Initials) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%230F766E'/><text x='50' y='60' font-family='system-ui,sans-serif' font-size='38' font-weight='bold' fill='%23FAF9F6' text-anchor='middle'>HP</text></svg>" />
+
+  <!-- Fonts: Plus Jakarta Sans & Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF9F6',
+            stonecard: '#FFFFFF',
+            slateink: '#1E293B',
+            slatemuted: '#475569',
+            tealbrand: '#0F766E',
+            tealdark: '#115E59',
+            teallight: '#CCFBF1',
+            tealtint: '#F0FDFA',
+            borderwarm: '#E7E5E4'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-ivory text-slateink antialiased selection:bg-teallight selection:text-tealdark min-h-screen flex flex-col">
+
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 bg-ivory/95 backdrop-blur-md border-b border-borderwarm">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display font-bold text-lg tracking-tight text-slateink flex items-center gap-2 hover:opacity-90 transition">
+        <span class="w-2.5 h-2.5 rounded-full bg-tealbrand inline-block shadow-[0_0_8px_rgba(15,118,110,0.5)]"></span>
+        <span>Harold Peña, Ph.D.</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slatemuted">
+        <a href="#about" data-i18n="nav_about" class="hover:text-tealbrand transition">About</a>
+        <a href="#skills" data-i18n="nav_skills" class="hover:text-tealbrand transition">Expertise</a>
+        <a href="#projects" data-i18n="nav_projects" class="hover:text-tealbrand transition">Projects</a>
+        <a href="#experience" data-i18n="nav_experience" class="hover:text-tealbrand transition">Experience</a>
+        <a href="#publications" data-i18n="nav_publications" class="hover:text-tealbrand transition">Publications</a>
       </nav>
-      <footer>
-        <ul class="icons">
-          <li><a href="https://gitlab.com/haroldpena" class="icon brands fa-github"><span
-                class="label">Github</span></a></li>
-          <li><a href="mailto:harold.penaherazo@edu.unito.it" class="icon solid fa-envelope"><span
-                class="label">Email</span></a></li>
-        </ul>
-      </footer>
-    </section>
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Main -->
-      <div id="main">
-        <!-- One -->
-        <section id="one">
-          <div class="image main" data-position="center"> <img src="images/mybanner.jpg"
-              title="La Silla"
-              alt="La Silla">
+
+      <!-- Right CTAs & Language Switcher -->
+      <div class="hidden sm:flex items-center gap-2.5">
+        
+        <!-- Language Selector Dropdown -->
+        <div class="relative" id="lang-dropdown-wrapper">
+          <button id="lang-menu-btn" type="button" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-borderwarm bg-white text-xs font-medium text-slateink hover:border-tealbrand transition shadow-2xs" aria-haspopup="true" aria-expanded="false">
+            <span id="current-lang-flag">🇬🇧</span>
+            <span id="current-lang-code" class="font-mono uppercase font-semibold">EN</span>
+            <svg class="w-3.5 h-3.5 text-slatemuted" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+
+          <div id="lang-menu" class="hidden absolute right-0 mt-1.5 w-36 rounded-xl bg-white border border-borderwarm shadow-lg py-1 z-50 text-xs">
+            <button data-lang="en" class="lang-option w-full px-3 py-2 text-left flex items-center gap-2 hover:bg-tealtint hover:text-tealbrand transition font-medium text-slateink">
+              <span>🇬🇧</span> English
+            </button>
+            <button data-lang="es" class="lang-option w-full px-3 py-2 text-left flex items-center gap-2 hover:bg-tealtint hover:text-tealbrand transition font-medium text-slateink">
+              <span>🇪🇸</span> Español
+            </button>
+            <button data-lang="it" class="lang-option w-full px-3 py-2 text-left flex items-center gap-2 hover:bg-tealtint hover:text-tealbrand transition font-medium text-slateink">
+              <span>🇮🇹</span> Italiano
+            </button>
+            <button data-lang="sl" class="lang-option w-full px-3 py-2 text-left flex items-center gap-2 hover:bg-tealtint hover:text-tealbrand transition font-medium text-slateink">
+              <span>🇸🇮</span> Slovenščina
+            </button>
           </div>
-          <div class="container">
-            <header class="major">
-              <h2>Astronomer</h2>
-              <p>&nbsp;East Asian Observatory (EAO)</p>
-            </header>
-            <p>I am an astronomer at the James Clerck Maxwell Telescope (JCMT) in Hilo, Hawaii. I have extensive experience
-              acquiring and analyzing data from astronomical instruments in
-              several astrophysical observatories. I am interested in the
-              physics of active galaxies and their environment.</p>
-            <p>I enjoy learning; academic curiosity drove me to the path of
-              inquiring the mechanisms behind the electromagnetic emission
-              arising from astrophysical sources. During this journey, I learned
-              analytical skills while getting insights into large collections of
-              scientific data-sets.</p>
-          </div>
-        </section>
-        <!-- Two -->
-        <section id="two">
-          <div class="container">
-            <h3>Education</h3>
-            <p> Ph.D. on Physics &amp; Astrophysics at <em>Università degli
-                studi di Torino</em> (Turin, Italy).<br>
-            </p>
-            <p> <em>Ph.D. on Astrophysics at </em><em> <em>Instituto,
-                  Nacional de Astrofísica, Óptica y Electrónica (</em>INAOE</em>).</p>
-            <p>M.Sc. at<em> INAOE</em> in Tonantzintla, México.</p>
-            B.Sc. at <em>Universidad Industrial de Santander</em>, in
-            Bucaramanga. </div>
-          <div class="container">
-            <h3>Employment</h3>
-            <p> <em>Support Astronomer (2024 - Present) </em><em> <em>. RCUH: JCMT (</em>EAO</em>). Hilo, USA.</p>
-            <p> <em>Research Fellow (2021 - 2024) </em><em> <em>. East Asian observatory (</em>EAO</em>). Hilo, USA.</p>
-            <p> Posdoctoral position (2020 - 2021)<em>. Università degli
-                studi di Torino.</em> Turin, Italy.<br>
-            </p>
-		</div>
-        </section>
-        <!-- Three -->
-        <section id="three">
-          <div class="container">
-            <h3>Skills</h3>
-            <p>Here you can find <a href="https://ui.adsabs.harvard.edu/public-libraries/Mb5YgS0QRT-NkTGuwfAMhw">my
-                publications</a> and ORCID: 0000-0003-0032-9538, and my <a href="https://ui.adsabs.harvard.edu/public-libraries/Mb5YgS0QRT-NkTGuwfAMhw"
-                style="color: #4acaa8;">ADS
-                library.</a></p>
-            <ul class="feature-icons">
-              <li class="icon solid fa-code">Coding: Python, IDL, &amp; SQL</li>
-              <li class="icon solid fa-cubes">Project management</li>
-              <li class="icon solid fa-book">Proficiency on English and Italian;
-                Spanish native speaker</li>
-              <li class="icon solid fa-bolt">Critical thinking</li>
-              <li class="icon solid fa-users">Group management</li>
-              <li class="icon solid fa-coffee">Coffee preference: 100 % Arabica!</li>
-            </ul>
-            <p></p>
-          </div>
-        </section>
-        <!-- Four -->
-        <section id="four">
-          <div class="features">
-            <article> <a href="#" class="image"><img src="images/aitoff.png" alt="sycat"
-                  title="sycat"
-                  style="margin-left: 20px; width: 361px;"></a>
-              <div class="inner">
-                <h4>Cataloging active galaxies</h4>
-                Cataloging astrophysical sources is the basis of many milestone
-                discoveries. I am willing to create catalogs of active galaxies
-                to gain physical insights into their emission mechanisms.<br>
-                For this, I created a novel catalog of Seyfert galaxies, the
-                Turin-SyCAT, with efficient multi-frequency selection criteria.</div>
-            </article>
-            <article> <a href="#" class="image"><img src="images/environment.jpg"
-                  alt="environment"
-                  title="environment"
-                  style="margin-left: 20px; width: 361px;"></a>
-              <div class="inner">
-                <h4>On the environment of active galaxies</h4>
-                I am interested in the influence of the galaxies' environment on
-                the onset of their nuclear activity.<br>
-                <br>
-                <ul>
-                  <li>Does the environment around galaxies that show nuclear
-                    activity plays a role in their activity?</li>
-                  <li>Do different types of active galaxies live in different
-                    environments?</li>
-                </ul>
-              </div>
-            </article>
-            <article> <a href="#" class="image"><img src="images/fermi.jp2" alt="fermi"
-                  title="fermi"
-                  style="margin-left: 20px; width: 361px;"></a>
-              <div class="inner">
-                <h4>Cataloging the extra-galactic gamma-ray sky</h4>
-                <p><br>
-                </p>
-                A significant part of Fermi-LAT sources still lacks a low-energy
-                counterpart. I am interested in finding or confirming the nature
-                of potential blazar-like counterparts of Fermi-LAT sources using
-                optical spectroscopy. </div>
-            </article>
-          </div>
-        </section>
-        <!-- Five -->
-        <section id="five">
-          <div class="container">
-            <h3>Contact Me</h3>
-            <p>Feel free to contact me at h.pena at eaobservatory.org</p>
-          </div>
-        </section>
-        <!-- Five -->
-        <!--
-							<section id="five">								<div class="container">									<h3>Elements</h3>									<section>										<h4>Text</h4>										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>										<hr />										<header>											<h4>Heading with a Subtitle</h4>											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>										</header>										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>										<header>											<h5>Heading with a Subtitle</h5>											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>										</header>										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>										<hr />										<h2>Heading Level 2</h2>										<h3>Heading Level 3</h3>										<h4>Heading Level 4</h4>										<h5>Heading Level 5</h5>										<h6>Heading Level 6</h6>										<hr />										<h5>Blockquote</h5>										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>										<h5>Preformatted</h5>										<pre><code>i = 0;while (!deck.isInOrder()) {    print 'Iteration ' + i;    deck.shuffle();    i++;}print 'It took ' + i + ' iterations to sort the deck.';</code></pre>									</section>									<section>										<h4>Lists</h4>										<div class="row">											<div class="col-6 col-12-xsmall">												<h5>Unordered</h5>												<ul>													<li>Dolor pulvinar etiam magna etiam.</li>													<li>Sagittis adipiscing lorem eleifend.</li>													<li>Felis enim feugiat dolore viverra.</li>												</ul>												<h5>Alternate</h5>												<ul class="alt">													<li>Dolor pulvinar etiam magna etiam.</li>													<li>Sagittis adipiscing lorem eleifend.</li>													<li>Felis enim feugiat dolore viverra.</li>												</ul>											</div>											<div class="col-6 col-12-xsmall">												<h5>Ordered</h5>												<ol>													<li>Dolor pulvinar etiam magna etiam.</li>													<li>Etiam vel felis at lorem sed viverra.</li>													<li>Felis enim feugiat dolore viverra.</li>													<li>Dolor pulvinar etiam magna etiam.</li>													<li>Etiam vel felis at lorem sed viverra.</li>													<li>Felis enim feugiat dolore viverra.</li>												</ol>												<h5>Icons</h5>												<ul class="icons">													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>												</ul>											</div>										</div>										<h5>Actions</h5>										<ul class="actions">											<li><a href="#" class="button primary">Default</a></li>											<li><a href="#" class="button">Default</a></li>											<li><a href="#" class="button alt">Default</a></li>										</ul>										<ul class="actions small">											<li><a href="#" class="button primary small">Small</a></li>											<li><a href="#" class="button small">Small</a></li>											<li><a href="#" class="button alt small">Small</a></li>										</ul>										<div class="row">											<div class="col-3 col-6-medium col-12-xsmall">												<ul class="actions stacked">													<li><a href="#" class="button primary">Default</a></li>													<li><a href="#" class="button">Default</a></li>													<li><a href="#" class="button alt">Default</a></li>												</ul>											</div>											<div class="col-3 col-6 col-12-xsmall">												<ul class="actions stacked">													<li><a href="#" class="button primary small">Small</a></li>													<li><a href="#" class="button small">Small</a></li>													<li><a href="#" class="button alt small">Small</a></li>												</ul>											</div>											<div class="col-3 col-6-medium col-12-xsmall">												<ul class="actions stacked">													<li><a href="#" class="button primary fit">Default</a></li>													<li><a href="#" class="button fit">Default</a></li>													<li><a href="#" class="button alt fit">Default</a></li>												</ul>											</div>											<div class="col-3 col-6-medium col-12-xsmall">												<ul class="actions stacked">													<li><a href="#" class="button primary small fit">Small</a></li>													<li><a href="#" class="button small fit">Small</a></li>													<li><a href="#" class="button alt small fit">Small</a></li>												</ul>											</div>										</div>									</section>									<section>										<h4>Table</h4>										<h5>Default</h5>										<div class="table-wrapper">											<table>												<thead>													<tr>														<th>Name</th>														<th>Description</th>														<th>Price</th>													</tr>												</thead>												<tbody>													<tr>														<td>Item One</td>														<td>Ante turpis integer aliquet porttitor.</td>														<td>29.99</td>													</tr>													<tr>														<td>Item Two</td>														<td>Vis ac commodo adipiscing arcu aliquet.</td>														<td>19.99</td>													</tr>													<tr>														<td>Item Three</td>														<td> Morbi faucibus arcu accumsan lorem.</td>														<td>29.99</td>													</tr>													<tr>														<td>Item Four</td>														<td>Vitae integer tempus condimentum.</td>														<td>19.99</td>													</tr>													<tr>														<td>Item Five</td>														<td>Ante turpis integer aliquet porttitor.</td>														<td>29.99</td>													</tr>												</tbody>												<tfoot>													<tr>														<td colspan="2"></td>														<td>100.00</td>													</tr>												</tfoot>											</table>										</div>										<h5>Alternate</h5>										<div class="table-wrapper">											<table class="alt">												<thead>													<tr>														<th>Name</th>														<th>Description</th>														<th>Price</th>													</tr>												</thead>												<tbody>													<tr>														<td>Item One</td>														<td>Ante turpis integer aliquet porttitor.</td>														<td>29.99</td>													</tr>													<tr>														<td>Item Two</td>														<td>Vis ac commodo adipiscing arcu aliquet.</td>														<td>19.99</td>													</tr>													<tr>														<td>Item Three</td>														<td> Morbi faucibus arcu accumsan lorem.</td>														<td>29.99</td>													</tr>													<tr>														<td>Item Four</td>														<td>Vitae integer tempus condimentum.</td>														<td>19.99</td>													</tr>													<tr>														<td>Item Five</td>														<td>Ante turpis integer aliquet porttitor.</td>														<td>29.99</td>													</tr>												</tbody>												<tfoot>													<tr>														<td colspan="2"></td>														<td>100.00</td>													</tr>												</tfoot>											</table>										</div>									</section>									<section>										<h4>Buttons</h4>										<ul class="actions">											<li><a href="#" class="button primary">Primary</a></li>											<li><a href="#" class="button">Default</a></li>											<li><a href="#" class="button alt">Alternate</a></li>										</ul>										<ul class="actions">											<li><a href="#" class="button primary large">Large</a></li>											<li><a href="#" class="button">Default</a></li>											<li><a href="#" class="button alt small">Small</a></li>										</ul>										<ul class="actions fit">											<li><a href="#" class="button primary fit">Fit</a></li>											<li><a href="#" class="button fit">Fit</a></li>											<li><a href="#" class="button alt fit">Fit</a></li>										</ul>										<ul class="actions fit small">											<li><a href="#" class="button primary fit small">Fit + Small</a></li>											<li><a href="#" class="button fit small">Fit + Small</a></li>											<li><a href="#" class="button alt fit small">Fit + Small</a></li>										</ul>										<ul class="actions">											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>											<li><a href="#" class="button icon solid fa-download">Icon</a></li>											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>										</ul>										<ul class="actions">											<li><span class="button primary disabled">Primary</span></li>											<li><span class="button disabled">Default</span></li>											<li><span class="button alt disabled">Alternate</span></li>										</ul>									</section>									<section>										<h4>Form</h4>										<form method="post" action="#">											<div class="row gtr-uniform">												<div class="col-6 col-12-xsmall">													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />												</div>												<div class="col-6 col-12-xsmall">													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />												</div>												<div class="col-12">													<select name="demo-category" id="demo-category">														<option value="">- Category -</option>														<option value="1">Manufacturing</option>														<option value="1">Shipping</option>														<option value="1">Administration</option>														<option value="1">Human Resources</option>													</select>												</div>												<div class="col-4 col-12-medium">													<input type="radio" id="demo-priority-low" name="demo-priority" checked>													<label for="demo-priority-low">Low Priority</label>												</div>												<div class="col-4 col-12-medium">													<input type="radio" id="demo-priority-normal" name="demo-priority">													<label for="demo-priority-normal">Normal Priority</label>												</div>												<div class="col-4 col-12-medium">													<input type="radio" id="demo-priority-high" name="demo-priority">													<label for="demo-priority-high">High Priority</label>												</div>												<div class="col-6 col-12-medium">													<input type="checkbox" id="demo-copy" name="demo-copy">													<label for="demo-copy">Email me a copy of this message</label>												</div>												<div class="col-6 col-12-medium">													<input type="checkbox" id="demo-human" name="demo-human" checked>													<label for="demo-human">I am a human and not a robot</label>												</div>												<div class="col-12">													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>												</div>												<div class="col-12">													<ul class="actions">														<li><input type="submit" value="Send Message" /></li>														<li><input type="reset" value="Reset" class="alt" /></li>													</ul>												</div>											</div>										</form>									</section>									<section>										<h4>Image</h4>										<h5>Fit</h5>										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>										<div class="box alt">											<div class="row gtr-50 gtr-uniform">												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>											</div>										</div>										<h5>Left &amp; Right</h5>										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>									</section>								</div>							</section>						-->
-      </div>
-      <!-- Footer -->
-      <section id="footer">
-        <div class="container">
-          <ul class="copyright">
-            <li>©Harold A. Peña-Herazo. All rights reserved.</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-          </ul>
         </div>
-      </section>
+
+        <!-- GitHub Header Link -->
+        <a href="https://github.com/haroldpena" target="_blank" rel="noopener noreferrer" title="GitHub Profile" class="p-2 rounded-lg text-slatemuted hover:text-slateink hover:bg-black/5 transition">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+
+        <!-- LinkedIn Header Link -->
+        <a id="nav-linkedin-link" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile" class="p-2 rounded-lg text-slatemuted hover:text-slateink hover:bg-black/5 transition">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.62 1.62 0 1 0-.01-3.24 1.62 1.62 0 0 0 .01 3.24M5.07 18.5h2.79v-8.37H5.07v8.37Z"/></svg>
+        </a>
+
+        <!-- Contact CTA -->
+        <a href="#contact" data-i18n="nav_contact" class="text-xs sm:text-sm font-medium bg-tealbrand text-white px-3.5 py-2 rounded-lg hover:bg-tealdark transition shadow-sm">
+          Get in Touch
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slatemuted hover:text-slateink hover:bg-black/5 focus:outline-none" aria-label="Toggle navigation menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-borderwarm bg-ivory px-6 py-4 space-y-3">
+      <!-- Mobile Language Choice -->
+      <div class="flex items-center justify-between pb-3 border-b border-borderwarm">
+        <span class="text-xs font-mono uppercase text-slatemuted font-semibold">Language</span>
+        <div class="flex items-center gap-1.5">
+          <button data-lang="en" class="lang-option-mobile px-2 py-1 rounded text-xs font-medium border border-borderwarm bg-white text-slateink">🇬🇧 EN</button>
+          <button data-lang="es" class="lang-option-mobile px-2 py-1 rounded text-xs font-medium border border-borderwarm bg-white text-slateink">🇪🇸 ES</button>
+          <button data-lang="it" class="lang-option-mobile px-2 py-1 rounded text-xs font-medium border border-borderwarm bg-white text-slateink">🇮🇹 IT</button>
+          <button data-lang="sl" class="lang-option-mobile px-2 py-1 rounded text-xs font-medium border border-borderwarm bg-white text-slateink">🇸🇮 SL</button>
+        </div>
+      </div>
+
+      <a href="#about" data-i18n="nav_about" class="mobile-nav-link block text-sm font-medium text-slateink hover:text-tealbrand py-1">About</a>
+      <a href="#skills" data-i18n="nav_skills" class="mobile-nav-link block text-sm font-medium text-slateink hover:text-tealbrand py-1">Expertise</a>
+      <a href="#projects" data-i18n="nav_projects" class="mobile-nav-link block text-sm font-medium text-slateink hover:text-tealbrand py-1">Projects</a>
+      <a href="#experience" data-i18n="nav_experience" class="mobile-nav-link block text-sm font-medium text-slateink hover:text-tealbrand py-1">Experience</a>
+      <a href="#publications" data-i18n="nav_publications" class="mobile-nav-link block text-sm font-medium text-slateink hover:text-tealbrand py-1">Publications</a>
+      
+      <div class="pt-3 border-t border-borderwarm flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <a href="https://github.com/haroldpena" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-slatemuted hover:text-tealbrand flex items-center gap-1">
+            GitHub ↗
+          </a>
+          <a id="mobile-linkedin-link" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-slatemuted hover:text-tealbrand flex items-center gap-1">
+            LinkedIn ↗
+          </a>
+        </div>
+        <a href="#contact" data-i18n="nav_contact" class="text-xs font-medium bg-tealbrand text-white px-3 py-1.5 rounded-lg hover:bg-tealdark transition">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 flex-grow">
+
+    <!-- HERO SECTION -->
+    <section id="about" class="py-16 md:py-24 border-b border-borderwarm">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tealtint border border-tealbrand/20 text-tealbrand text-xs font-mono font-medium mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-tealbrand"></span>
+          <span data-i18n="hero_location">Ljubljana, Slovenia · EU & Remote</span>
+        </div>
+
+        <!-- Title requested by user -->
+        <h1 data-i18n="hero_title" class="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slateink leading-[1.18] mb-6">
+          Physicist, Astronomer, and Data Scientist: Data analysis, pipelines, research & modelling.
+        </h1>
+
+        <!-- Narrative requested by user -->
+        <p data-i18n="hero_bio" class="text-base sm:text-lg text-slatemuted leading-relaxed mb-8">
+          Ph.D. in Physics & Astrophysics with 8+ years developing automated data processing pipelines, analyzing complex datasets, performing cutting-edge research, and diagnosing hardware instrument faults and performance.
+        </p>
+
+        <!-- Focus Areas -->
+        <div class="flex flex-wrap gap-2 mb-9">
+          <span data-i18n="pill_pipelines" class="px-3 py-1.5 rounded-md bg-white border border-borderwarm text-xs font-medium text-slateink shadow-2xs">Data Pipeline Automation</span>
+          <span data-i18n="pill_stats" class="px-3 py-1.5 rounded-md bg-white border border-borderwarm text-xs font-medium text-slateink shadow-2xs">Statistical Data Analysis</span>
+          <span data-i18n="pill_sensors" class="px-3 py-1.5 rounded-md bg-white border border-borderwarm text-xs font-medium text-slateink shadow-2xs">Sensor & Signal Analytics</span>
+          <span data-i18n="pill_timeseries" class="px-3 py-1.5 rounded-md bg-white border border-borderwarm text-xs font-medium text-slateink shadow-2xs">Time Series & Risk Modeling</span>
+        </div>
+
+        <!-- Primary Actions -->
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="#projects" data-i18n="btn_explore" class="px-5 py-3 rounded-lg bg-tealbrand text-white font-medium text-sm hover:bg-tealdark transition shadow-sm inline-flex items-center gap-2">
+            View Projects & Portfolio
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <a href="https://github.com/haroldpena" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-lg bg-white border border-borderwarm text-slateink font-medium text-sm hover:border-tealbrand hover:text-tealbrand transition shadow-2xs inline-flex items-center gap-2">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub Profile
+          </a>
+          <a href="#contact" data-i18n="btn_contact" class="px-4 py-3 text-sm font-medium text-slatemuted hover:text-tealbrand transition flex items-center gap-1.5">
+            Contact Options →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL EXPERTISE & CORE SKILLS -->
+    <section id="skills" class="py-16 md:py-20 border-b border-borderwarm">
+      <div class="max-w-2xl mb-12">
+        <h2 data-i18n="skills_heading" class="font-display text-2xl sm:text-3xl font-bold text-slateink tracking-tight">Technical Expertise</h2>
+        <p data-i18n="skills_intro" class="text-slatemuted mt-3 leading-relaxed">
+          Combining physics research, pipeline automation, and statistical methods to analyze complex data and solve real-world problems.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Pillar 1 -->
+        <div class="bg-stonecard p-6 rounded-xl border border-borderwarm shadow-2xs flex flex-col justify-between">
+          <div>
+            <div class="w-9 h-9 rounded-lg bg-tealtint text-tealbrand flex items-center justify-center font-mono text-sm font-bold mb-4">01</div>
+            <h3 data-i18n="p1_title" class="font-display font-bold text-lg text-slateink mb-2">Data Pipeline Automation & ETL</h3>
+            <p data-i18n="p1_desc" class="text-sm text-slatemuted leading-relaxed mb-4">
+              Building modular, automated end-to-end data reduction pipelines using Python and Bash to calibrate, clean, and process multi-frequency observational datasets reliably.
+            </p>
+          </div>
+          <p class="font-mono text-xs text-tealbrand border-t border-borderwarm pt-3">Python · Bash · SQL · Linux</p>
+        </div>
+
+        <!-- Pillar 2 (No "telemetry") -->
+        <div class="bg-stonecard p-6 rounded-xl border border-borderwarm shadow-2xs flex flex-col justify-between">
+          <div>
+            <div class="w-9 h-9 rounded-lg bg-tealtint text-tealbrand flex items-center justify-center font-mono text-sm font-bold mb-4">02</div>
+            <h3 data-i18n="p2_title" class="font-display font-bold text-lg text-slateink mb-2">Signal Analytics & Hardware Diagnostics</h3>
+            <p data-i18n="p2_desc" class="text-sm text-slatemuted leading-relaxed mb-4">
+              Investigating instrument and sensor performance for submillimeter receivers and SCUBA-2 camera, identifying physical causes of signal anomalies to minimize operational downtime.
+            </p>
+          </div>
+          <p class="font-mono text-xs text-tealbrand border-t border-borderwarm pt-3">Calibration · Diagnostics · Hardware</p>
+        </div>
+
+        <!-- Pillar 3 (Requested wording) -->
+        <div class="bg-stonecard p-6 rounded-xl border border-borderwarm shadow-2xs flex flex-col justify-between">
+          <div>
+            <div class="w-9 h-9 rounded-lg bg-tealtint text-tealbrand flex items-center justify-center font-mono text-sm font-bold mb-4">03</div>
+            <h3 data-i18n="p3_title" class="font-display font-bold text-lg text-slateink mb-2">Statistical Data Analysis & Modeling</h3>
+            <p data-i18n="p3_desc" class="text-sm text-slatemuted leading-relaxed mb-4">
+              Evaluating theoretical physical models against empirical multi-detector observations, catalog cross-matching, statistical analysis, numerical simulations, and rigorous uncertainty handling.
+            </p>
+          </div>
+          <p class="font-mono text-xs text-tealbrand border-t border-borderwarm pt-3">Statistical Inference · Numerical Modeling</p>
+        </div>
+      </div>
+
+      <!-- Technical Stack Details (Direct from Industry CV) -->
+      <div class="mt-8 bg-stonecard p-6 rounded-xl border border-borderwarm shadow-2xs space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-borderwarm/60 pb-3">
+          <span data-i18n="stack_programming" class="text-xs font-mono uppercase tracking-wider text-slatemuted font-semibold">Programming & Data</span>
+          <div class="flex flex-wrap gap-2 font-mono text-xs">
+            <span class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink">Python</span>
+            <span class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink">Bash</span>
+            <span class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink">SQL</span>
+            <span class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink">LaTeX</span>
+            <span class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink">STARLINK-IRAF</span>
+            <span class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink">ESO-Reflex</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-borderwarm/60 pb-3">
+          <span data-i18n="stack_engineering" class="text-xs font-mono uppercase tracking-wider text-slatemuted font-semibold">Engineering & Physics</span>
+          <div class="flex flex-wrap gap-2 font-mono text-xs">
+            <span data-i18n="stack_item_automation" class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink">Data Pipeline Automation</span>
+            <span data-i18n="stack_item_instruments" class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink">Observational Instrumentation</span>
+            <span data-i18n="stack_item_troubleshooting" class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink">Hardware Troubleshooting</span>
+            <span data-i18n="stack_item_stats" class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink">Statistical Data Analysis</span>
+            <span data-i18n="stack_item_modeling" class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink">Numerical Modeling</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <span data-i18n="stack_languages" class="text-xs font-mono uppercase tracking-wider text-slatemuted font-semibold">Languages</span>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink"><strong class="font-medium">Spanish:</strong> <span data-i18n="lang_es_level">Native</span></span>
+            <span class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink"><strong class="font-medium">English:</strong> <span data-i18n="lang_en_level">Fluent</span></span>
+            <span class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink"><strong class="font-medium">Italian:</strong> <span data-i18n="lang_it_level">Fluent</span></span>
+            <span class="px-2.5 py-1 rounded bg-ivory border border-borderwarm text-slateink"><strong class="font-medium">Slovenian:</strong> <span data-i18n="lang_sl_level">Beginner</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL PROJECTS & CASE STUDIES -->
+    <section id="projects" class="py-16 md:py-20 border-b border-borderwarm">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div>
+          <h2 data-i18n="projects_heading" class="font-display text-2xl sm:text-3xl font-bold text-slateink tracking-tight">Projects & Case Studies</h2>
+          <p data-i18n="projects_intro" class="text-slatemuted mt-2">Verified software pipelines, instrument systems work, and upcoming applied data science case studies.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2" id="filter-buttons">
+          <button data-filter="all" data-i18n="filter_all" class="filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-medium bg-tealbrand text-white border border-tealbrand transition shadow-2xs">All Projects</button>
+          <button data-filter="completed" data-i18n="filter_completed" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-white border border-borderwarm text-slatemuted hover:text-tealbrand hover:border-tealbrand/50 transition">Completed & Published</button>
+          <button data-filter="upcoming" data-i18n="filter_upcoming" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-white border border-borderwarm text-slatemuted hover:text-tealbrand hover:border-tealbrand/50 transition">In Progress (Upcoming)</button>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="grid md:grid-cols-2 gap-6" id="project-grid">
+
+        <!-- REAL PROJECT 1: easyspec -->
+        <article data-category="completed" class="project-card bg-stonecard p-6 rounded-xl border border-borderwarm shadow-2xs flex flex-col justify-between hover:border-tealbrand/40 transition">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span data-i18n="proj_easyspec_tag" class="px-2.5 py-0.5 rounded bg-tealtint text-tealbrand font-mono text-xs font-medium">Software Package · Published 2025</span>
+              <span data-i18n="status_completed" class="text-xs font-mono text-tealbrand font-medium">Completed</span>
+            </div>
+            <h3 class="font-display font-bold text-lg text-slateink mb-2">easyspec: Python Package for Long-slit Spectroscopy</h3>
+            <p data-i18n="proj_easyspec_desc" class="text-sm text-slatemuted leading-relaxed mb-4">
+              Open-source Python package automating calibration, noise subtraction, wavelength fitting, and spectral extraction of raw long-slit optical sensor data, replacing manual multi-step reductions with reproducible automated pipelines.
+            </p>
+            <ul class="text-xs text-slatemuted space-y-1.5 mb-5 border-t border-borderwarm pt-3">
+              <li><strong class="text-slateink" data-i18n="lbl_capabilities">Key Capabilities:</strong> <span data-i18n="proj_easyspec_caps">Pipeline automation, signal calibration, reproducible optical and spectral data processing.</span></li>
+              <li><strong class="text-slateink" data-i18n="lbl_published">Published in:</strong> <em>The Astronomical Journal</em>, 170, 166 (2025).</li>
+            </ul>
+          </div>
+          <div class="flex items-center justify-between pt-3 border-t border-borderwarm">
+            <span class="font-mono text-xs text-slatemuted">Python · Astropy · SciPy</span>
+            <a href="https://doi.org/10.3847/1538-3881/adf220" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-tealbrand hover:underline inline-flex items-center gap-1">
+              DOI: 10.3847/1538-3881/adf220 ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- REAL PROJECT 2: JCMT Instrument Diagnostics -->
+        <article data-category="completed" class="project-card bg-stonecard p-6 rounded-xl border border-borderwarm shadow-2xs flex flex-col justify-between hover:border-tealbrand/40 transition">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span data-i18n="proj_jcmt_tag" class="px-2.5 py-0.5 rounded bg-tealtint text-tealbrand font-mono text-xs font-medium">Operations & Performance · JCMT / EAO</span>
+              <span data-i18n="status_completed" class="text-xs font-mono text-tealbrand font-medium">Completed</span>
+            </div>
+            <h3 data-i18n="proj_jcmt_title" class="font-display font-bold text-lg text-slateink mb-2">Submillimeter Receiver Diagnostics & Pipeline Optimization</h3>
+            <p data-i18n="proj_jcmt_desc" class="text-sm text-slatemuted leading-relaxed mb-4">
+              Investigated signal and sensor performance for sub-millimeter heterodyne receivers and the SCUBA-2 camera at the James Clerk Maxwell Telescope. Identified physical root causes of signal anomalies to minimize operational downtime, and built automated Python and Bash data processing pipelines to handle multi-frequency data.
+            </p>
+            <ul class="text-xs text-slatemuted space-y-1.5 mb-5 border-t border-borderwarm pt-3">
+              <li><strong class="text-slateink" data-i18n="lbl_capabilities">Key Capabilities:</strong> <span data-i18n="proj_jcmt_caps">Sensor anomaly diagnostics, hardware troubleshooting, multi-frequency pipeline optimization.</span></li>
+              <li><strong class="text-slateink" data-i18n="lbl_institution">Institution:</strong> East Asian Observatory (EAO), Hilo, HI, USA.</li>
+            </ul>
+          </div>
+          <div class="flex items-center justify-between pt-3 border-t border-borderwarm">
+            <span class="font-mono text-xs text-slatemuted">Python · Bash · STARLINK · Linux</span>
+            <a href="#experience" data-i18n="link_exp_details" class="text-xs font-medium text-tealbrand hover:underline inline-flex items-center gap-1">
+              Experience Details ↓
+            </a>
+          </div>
+        </article>
+
+        <!-- REAL PROJECT 3: Multi-Frequency Cross-Matching -->
+        <article data-category="completed" class="project-card bg-stonecard p-6 rounded-xl border border-borderwarm shadow-2xs flex flex-col justify-between hover:border-tealbrand/40 transition">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span data-i18n="proj_sycat_tag" class="px-2.5 py-0.5 rounded bg-tealtint text-tealbrand font-mono text-xs font-medium">Catalog Cross-Matching & Classification</span>
+              <span data-i18n="status_completed" class="text-xs font-mono text-tealbrand font-medium">Completed</span>
+            </div>
+            <h3 data-i18n="proj_sycat_title" class="font-display font-bold text-lg text-slateink mb-2">Turin-SyCAT & High-Energy Cross-Matching</h3>
+            <p data-i18n="proj_sycat_desc" class="text-sm text-slatemuted leading-relaxed mb-4">
+              Conducted multi-frequency probabilistic cross-matching workflows combining gamma-ray, X-ray, optical, infrared, and radio survey data to classify unidentified high-energy sources and construct validated catalogs (Turin-SyCAT Releases I & II).
+            </p>
+            <ul class="text-xs text-slatemuted space-y-1.5 mb-5 border-t border-borderwarm pt-3">
+              <li><strong class="text-slateink" data-i18n="lbl_capabilities">Key Capabilities:</strong> <span data-i18n="proj_sycat_caps">Statistical data analysis, multi-detector cross-matching, catalog validation.</span></li>
+              <li><strong class="text-slateink" data-i18n="lbl_published">Published in:</strong> <em>Astronomy & Astrophysics</em>, 659, A32 (2022).</li>
+            </ul>
+          </div>
+          <div class="flex items-center justify-between pt-3 border-t border-borderwarm">
+            <span class="font-mono text-xs text-slatemuted">Python · SQL · Statistical Analysis</span>
+            <a href="https://doi.org/10.1051/0004-6361/202038752" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-tealbrand hover:underline inline-flex items-center gap-1">
+              DOI: 10.1051/0004-6361/202038752 ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- UPCOMING CASE STUDY 1: Time Series & Forecasting -->
+        <article data-category="upcoming" class="project-card bg-stonecard p-6 rounded-xl border border-dashed border-borderwarm/90 shadow-2xs flex flex-col justify-between hover:border-tealbrand/40 transition relative">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span data-i18n="tag_upcoming_ts" class="px-2.5 py-0.5 rounded bg-amber-50 text-amber-700 font-mono text-xs font-medium border border-amber-200">Time-Series & Forecasting</span>
+              <span data-i18n="status_in_dev" class="text-xs font-mono text-amber-600 font-medium">In Development</span>
+            </div>
+            <h3 data-i18n="case_ts_title" class="font-display font-bold text-lg text-slateink mb-2">Time-Series Analysis & Multi-Horizon Forecasting</h3>
+            <p data-i18n="case_ts_desc" class="text-sm text-slatemuted leading-relaxed mb-4">
+              Technical case study focusing on time-series decomposition, statistical baselines, and predictive modeling for sequential datasets.
+            </p>
+            <div class="p-3 rounded-lg bg-ivory border border-borderwarm text-xs text-slatemuted mb-4">
+              <span class="font-semibold text-slateink" data-i18n="lbl_status">Status:</span> <span data-i18n="case_ts_status">Case study and methodology currently in development. Technical write-up and reproducible code repository will be published here upon completion.</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-3 border-t border-borderwarm">
+            <span class="font-mono text-xs text-slatemuted">Python · Time Series · Benchmarking</span>
+            <span data-i18n="lbl_coming_soon" class="text-xs font-mono text-slatemuted italic">Coming Soon</span>
+          </div>
+        </article>
+
+        <!-- UPCOMING CASE STUDY 2: Satellite & Sensor Analytics -->
+        <article data-category="upcoming" class="project-card bg-stonecard p-6 rounded-xl border border-dashed border-borderwarm/90 shadow-2xs flex flex-col justify-between hover:border-tealbrand/40 transition relative">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span data-i18n="tag_upcoming_satellite" class="px-2.5 py-0.5 rounded bg-amber-50 text-amber-700 font-mono text-xs font-medium border border-amber-200">Remote Sensing & Satellite Data</span>
+              <span data-i18n="status_in_dev" class="text-xs font-mono text-amber-600 font-medium">In Development</span>
+            </div>
+            <h3 data-i18n="case_sat_title" class="font-display font-bold text-lg text-slateink mb-2">Satellite Data Analysis & Signal Analytics</h3>
+            <p data-i18n="case_sat_desc" class="text-sm text-slatemuted leading-relaxed mb-4">
+              Applying 8+ years of multi-detector astronomical imaging and calibration pipeline experience to satellite earth observation data processing and feature extraction.
+            </p>
+            <div class="p-3 rounded-lg bg-ivory border border-borderwarm text-xs text-slatemuted mb-4">
+              <span class="font-semibold text-slateink" data-i18n="lbl_status">Status:</span> <span data-i18n="case_sat_status">Case study and workflow pipeline currently being assembled and documented for public release.</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-3 border-t border-borderwarm">
+            <span class="font-mono text-xs text-slatemuted">Python · Remote Sensing · Signal Analytics</span>
+            <span data-i18n="lbl_coming_soon" class="text-xs font-mono text-slatemuted italic">Coming Soon</span>
+          </div>
+        </article>
+
+        <!-- UPCOMING CASE STUDY 3: Quantitative & Market Risk -->
+        <article data-category="upcoming" class="project-card bg-stonecard p-6 rounded-xl border border-dashed border-borderwarm/90 shadow-2xs flex flex-col justify-between hover:border-tealbrand/40 transition relative">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span data-i18n="tag_upcoming_risk" class="px-2.5 py-0.5 rounded bg-amber-50 text-amber-700 font-mono text-xs font-medium border border-amber-200">Quantitative & Risk Analysis</span>
+              <span data-i18n="status_in_dev" class="text-xs font-mono text-amber-600 font-medium">In Development</span>
+            </div>
+            <h3 data-i18n="case_risk_title" class="font-display font-bold text-lg text-slateink mb-2">Quantitative Risk Analysis & Modeling</h3>
+            <p data-i18n="case_risk_desc" class="text-sm text-slatemuted leading-relaxed mb-4">
+              Applying numerical modeling, probability distributions, and statistical validation techniques to quantitative risk metrics and backtesting frameworks.
+            </p>
+            <div class="p-3 rounded-lg bg-ivory border border-borderwarm text-xs text-slatemuted mb-4">
+              <span class="font-semibold text-slateink" data-i18n="lbl_status">Status:</span> <span data-i18n="case_risk_status">Analysis framework and benchmark experiments currently in progress.</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-3 border-t border-borderwarm">
+            <span class="font-mono text-xs text-slatemuted">Python · Numerical Modeling · Risk</span>
+            <span data-i18n="lbl_coming_soon" class="text-xs font-mono text-slatemuted italic">Coming Soon</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE & EDUCATION (Directly from CV) -->
+    <section id="experience" class="py-16 md:py-20 border-b border-borderwarm">
+      <div class="grid md:grid-cols-2 gap-12">
+
+        <!-- Work Experience -->
+        <div>
+          <h2 data-i18n="exp_heading" class="font-display text-2xl font-bold text-slateink tracking-tight mb-8">Work Experience</h2>
+          <div class="space-y-8 border-l-2 border-borderwarm pl-6">
+            
+            <!-- East Asian Observatory -->
+            <div class="relative">
+              <span class="w-3 h-3 rounded-full bg-tealbrand absolute -left-[31px] top-1.5 ring-4 ring-ivory"></span>
+              <p class="font-mono text-xs text-tealbrand mb-1">Aug 2021 – 2026 · Hilo, HI, USA</p>
+              <h3 data-i18n="exp_role1" class="font-display font-bold text-base text-slateink">Support Scientist & Postdoctoral Fellow</h3>
+              <p class="text-sm font-medium text-slatemuted mb-2">East Asian Observatory (EAO) / JCMT</p>
+              <ul class="text-xs text-slatemuted leading-relaxed space-y-1.5 list-disc list-outside ml-3">
+                <li data-i18n="exp_role1_b1">Monitored and assisted in commissioning telescope instrumentation for submillimeter astronomy.</li>
+                <li data-i18n="exp_role1_b2">Developed and optimized data processing pipelines using Python and Bash to handle multi-frequency datasets.</li>
+                <li data-i18n="exp_role1_b3">Investigated data anomalies and instrument performance of sub-millimeter heterodyne receivers and the SCUBA-2 camera, identifying physical causes of signal anomalies to minimize operational downtime of the instruments.</li>
+                <li data-i18n="exp_role1_b4">Collaborated with international engineering and scientific teams to validate instrument performance.</li>
+              </ul>
+            </div>
+
+            <!-- University of Turin & INAOE -->
+            <div class="relative">
+              <span class="w-3 h-3 rounded-full bg-slateink/40 absolute -left-[31px] top-1.5 ring-4 ring-ivory"></span>
+              <p class="font-mono text-xs text-slatemuted mb-1">Oct 2020 – May 2021 · Turin, Italy & Puebla, Mexico</p>
+              <h3 data-i18n="exp_role2" class="font-display font-bold text-base text-slateink">Postdoctoral Fellow</h3>
+              <p class="text-sm font-medium text-slatemuted mb-2">University of Turin & INAOE</p>
+              <ul class="text-xs text-slatemuted leading-relaxed space-y-1.5 list-disc list-outside ml-3">
+                <li data-i18n="exp_role2_b1">Designed and executed astronomical observational experiments for different projects using data from optical, infrared, gamma-rays, X-rays, and radio frequency detectors.</li>
+                <li data-i18n="exp_role2_b2">Evaluated theoretical physics predictions of the environments of active galaxies against observational data utilizing Python scripts.</li>
+              </ul>
+            </div>
+
+            <!-- Visiting Scientist CfA & ESO -->
+            <div class="relative">
+              <span class="w-3 h-3 rounded-full bg-slateink/40 absolute -left-[31px] top-1.5 ring-4 ring-ivory"></span>
+              <p class="font-mono text-xs text-slatemuted mb-1">2018 – 2023 · Cambridge, MA & Santiago, Chile</p>
+              <h3 data-i18n="exp_role3" class="font-display font-bold text-base text-slateink">Visiting Scientist</h3>
+              <p class="text-sm font-medium text-slatemuted mb-2">Harvard-Smithsonian CfA & ESO</p>
+              <ul class="text-xs text-slatemuted leading-relaxed space-y-1.5 list-disc list-outside ml-3">
+                <li data-i18n="exp_role3_b1">Harvard-Smithsonian Center for Astrophysics (CfA): Invited to conduct research across multiple terms (2018, 2023).</li>
+                <li data-i18n="exp_role3_b2">European Southern Observatory (ESO): Conducted research and data analysis contributing to large-scale international collaborations including the Fermi-LAT collaboration.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Education & Scientific Memberships -->
+        <div>
+          <h2 data-i18n="edu_heading" class="font-display text-2xl font-bold text-slateink tracking-tight mb-8">Education & Credentials</h2>
+          <div class="space-y-6">
+            
+            <div class="bg-stonecard p-5 rounded-xl border border-borderwarm shadow-2xs">
+              <p class="font-mono text-xs text-tealbrand mb-1">Sept 2016 – Sept 2020 · Turin, Italy & Tonantzintla, Mexico</p>
+              <h3 data-i18n="edu_degree_phd" class="font-display font-bold text-base text-slateink">Ph.D. in Physics & Astrophysics</h3>
+              <p class="text-sm text-slatemuted">University of Turin (Joint Cotutelle Program with INAOE)</p>
+              <p data-i18n="edu_supervisors" class="text-xs text-slatemuted mt-1">Supervisors: Dr. Francesco Massaro (Univ. of Turin) & Dr. Vahram Chavushyan (INAOE)</p>
+            </div>
+
+            <div class="bg-stonecard p-5 rounded-xl border border-borderwarm shadow-2xs">
+              <p class="font-mono text-xs text-slatemuted mb-1">Aug 2014 – Aug 2016 · Tonantzintla, Mexico</p>
+              <h3 data-i18n="edu_degree_msc" class="font-display font-bold text-base text-slateink">Master’s Degree in Astrophysics</h3>
+              <p class="text-sm text-slatemuted">National Institute of Astrophysics, Optics and Electronics (INAOE)</p>
+            </div>
+
+            <div class="bg-stonecard p-5 rounded-xl border border-borderwarm shadow-2xs">
+              <p class="font-mono text-xs text-slatemuted mb-1">Jan 2010 – May 2014 · Bucaramanga, Colombia</p>
+              <h3 data-i18n="edu_degree_bsc" class="font-display font-bold text-base text-slateink">Bachelor of Science in Physics</h3>
+              <p class="text-sm text-slatemuted">Industrial University of Santander (UIS)</p>
+            </div>
+
+            <!-- Scientific Service & Memberships -->
+            <div class="p-5 rounded-xl bg-tealtint/60 border border-tealbrand/20">
+              <h4 data-i18n="memberships_title" class="font-display font-bold text-sm text-slateink mb-2">Scientific Collaborations & Service</h4>
+              <ul class="text-xs text-slatemuted leading-relaxed space-y-1">
+                <li data-i18n="membership_eht">• <strong>Event Horizon Telescope Collaboration (EHTC):</strong> Member (2024–Present)</li>
+                <li data-i18n="membership_fermi">• <strong>Fermi-LAT Collaboration:</strong> Member (2017–2020)</li>
+                <li data-i18n="membership_referee">• <strong>Peer Review:</strong> Referee for <em>MNRAS</em> and <em>ApJ</em>; Review Panelist for NASA NuSTAR time allocation.</li>
+                <li data-i18n="membership_soc">• <strong>Memberships:</strong> International Astronomical Union (IAU), American Astronomical Society (AAS).</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SELECTED REFEREED PUBLICATIONS (from ADS & CV) -->
+    <section id="publications" class="py-16 md:py-20 border-b border-borderwarm">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+        <div>
+          <h2 data-i18n="pub_heading" class="font-display text-2xl sm:text-3xl font-bold text-slateink tracking-tight">Selected Refereed Publications</h2>
+          <p data-i18n="pub_intro" class="text-slatemuted mt-2">29 peer-reviewed journal papers (8 as first or corresponding author, 2,209+ citations, h-index 12).</p>
+        </div>
+        <a href="https://ui.adsabs.harvard.edu/public-libraries/Mb5YgS0QRT-NkTGuwfAMhw" target="_blank" rel="noopener noreferrer" data-i18n="pub_ads_link" class="text-sm font-medium text-tealbrand hover:underline inline-flex items-center gap-1 shrink-0">
+          Full NASA ADS Bibliography ↗
+        </a>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Paper 1 -->
+        <div class="bg-stonecard p-5 rounded-xl border border-borderwarm shadow-2xs flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-tealbrand/40 transition">
+          <div>
+            <p class="font-mono text-xs text-tealbrand mb-1">Monthly Notices of the Royal Astronomical Society · 2026</p>
+            <h3 class="font-display font-bold text-base text-slateink">The GLEAM 4-Jy (G4Jy) Sample: IV. Multiwavelength data and analysis</h3>
+            <p class="text-xs text-slatemuted mt-1">White, S. V., ..., <strong>Peña-Herazo, H. A.</strong></p>
+          </div>
+          <a href="https://doi.org/10.1093/mnras/stag446" target="_blank" rel="noopener noreferrer" class="shrink-0 text-xs font-mono px-3 py-1.5 rounded border border-borderwarm hover:border-tealbrand hover:text-tealbrand text-slateink transition">DOI ↗</a>
+        </div>
+
+        <!-- Paper 2 -->
+        <div class="bg-stonecard p-5 rounded-xl border border-borderwarm shadow-2xs flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-tealbrand/40 transition">
+          <div>
+            <p class="font-mono text-xs text-tealbrand mb-1">The Astronomical Journal · 2025</p>
+            <h3 class="font-display font-bold text-base text-slateink">easyspec: An Open-source Python Package for Long-slit Spectroscopy</h3>
+            <p class="text-xs text-slatemuted mt-1">de Menezes, R., Massaro, F., Negro, M., Raiteri, C. M., <strong>Peña-Herazo, H.</strong>, Acosta-Pulido, J. A.</p>
+          </div>
+          <a href="https://doi.org/10.3847/1538-3881/adf220" target="_blank" rel="noopener noreferrer" class="shrink-0 text-xs font-mono px-3 py-1.5 rounded border border-borderwarm hover:border-tealbrand hover:text-tealbrand text-slateink transition">DOI ↗</a>
+        </div>
+
+        <!-- Paper 3 -->
+        <div class="bg-stonecard p-5 rounded-xl border border-borderwarm shadow-2xs flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-tealbrand/40 transition">
+          <div>
+            <p class="font-mono text-xs text-slatemuted mb-1">The Astrophysical Journal Supplement Series · 2024</p>
+            <h3 class="font-display font-bold text-base text-slateink">The JCMT Legacy Release: SCUBA-2 850 µm Coadds and Catalogs</h3>
+            <p class="text-xs text-slatemuted mt-1">Graves, S. F., Dempsey, J. T., ..., <strong>Peña, H.</strong>, et al.</p>
+          </div>
+          <a href="https://doi.org/10.3847/1538-4365/ace76b" target="_blank" rel="noopener noreferrer" class="shrink-0 text-xs font-mono px-3 py-1.5 rounded border border-borderwarm hover:border-tealbrand hover:text-tealbrand text-slateink transition">DOI ↗</a>
+        </div>
+
+        <!-- Paper 4 -->
+        <div class="bg-stonecard p-5 rounded-xl border border-borderwarm shadow-2xs flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-tealbrand/40 transition">
+          <div>
+            <p class="font-mono text-xs text-slatemuted mb-1">Astronomy & Astrophysics · 2022 (First Author)</p>
+            <h3 class="font-display font-bold text-base text-slateink">Turin-SyCAT: A Multifrequency Catalog of Seyfert Galaxies</h3>
+            <p class="text-xs text-slatemuted mt-1"><strong>Peña-Herazo, H. A.</strong>, Massaro, F., Chavushyan, V., Masetti, N., Paggi, A., Capetti, A.</p>
+          </div>
+          <a href="https://doi.org/10.1051/0004-6361/202038752" target="_blank" rel="noopener noreferrer" class="shrink-0 text-xs font-mono px-3 py-1.5 rounded border border-borderwarm hover:border-tealbrand hover:text-tealbrand text-slateink transition">DOI ↗</a>
+        </div>
+
+        <!-- Paper 5 -->
+        <div class="bg-stonecard p-5 rounded-xl border border-borderwarm shadow-2xs flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-tealbrand/40 transition">
+          <div>
+            <p class="font-mono text-xs text-slatemuted mb-1">The Astronomical Journal · 2021 (First Author)</p>
+            <h3 class="font-display font-bold text-base text-slateink">An Optical Overview of Blazars with LAMOST (Papers I & II)</h3>
+            <p class="text-xs text-slatemuted mt-1"><strong>Peña-Herazo, H. A.</strong>, Massaro, F., Gu, M., et al., Spectroscopic classification and redshift analysis.</p>
+          </div>
+          <a href="https://doi.org/10.3847/1538-3881/ac09e2" target="_blank" rel="noopener noreferrer" class="shrink-0 text-xs font-mono px-3 py-1.5 rounded border border-borderwarm hover:border-tealbrand hover:text-tealbrand text-slateink transition">DOI ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (PRIVACY CONSCIOUS: NO EMAIL EXPOSURE) -->
+    <section id="contact" class="py-16 md:py-24">
+      <div class="bg-stonecard rounded-2xl border border-borderwarm p-8 md:p-12 shadow-sm">
+        <div class="max-w-2xl mb-8">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tealtint border border-tealbrand/20 text-tealbrand text-xs font-mono font-medium mb-4">
+            <span class="w-1.5 h-1.5 rounded-full bg-tealbrand"></span>
+            <span data-i18n="contact_badge">Professional Inquiries & Networking</span>
+          </div>
+          <h2 data-i18n="contact_heading" class="font-display text-2xl sm:text-3xl font-bold text-slateink tracking-tight">Let’s Connect</h2>
+          <p data-i18n="contact_intro" class="text-slatemuted mt-3 leading-relaxed">
+            Open to discussing Data Science, Quantitative Analyst, and Signal/Pipeline roles, scientific collaborations, and technical initiatives. Based in Ljubljana, Slovenia (EU & Remote).
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 max-w-xl">
+          <!-- Primary: LinkedIn Direct Connection -->
+          <a id="contact-linkedin-link" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="p-5 rounded-xl bg-ivory border border-borderwarm hover:border-tealbrand transition shadow-2xs flex flex-col justify-between group">
+            <div class="flex items-center justify-between mb-3">
+              <span data-i18n="contact_linkedin_title" class="font-display font-bold text-sm text-slateink group-hover:text-tealbrand transition">Connect on LinkedIn</span>
+              <svg class="w-5 h-5 text-[#0A66C2]" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.62 1.62 0 1 0-.01-3.24 1.62 1.62 0 0 0 .01 3.24M5.07 18.5h2.79v-8.37H5.07v8.37Z"/></svg>
+            </div>
+            <p data-i18n="contact_linkedin_desc" class="text-xs text-slatemuted leading-relaxed">
+              Message me directly on LinkedIn for career opportunities, inquiries, or research networking.
+            </p>
+            <span data-i18n="contact_linkedin_cta" class="text-xs font-medium text-tealbrand mt-4 inline-flex items-center gap-1 group-hover:underline">
+              Open Profile ↗
+            </span>
+          </a>
+
+          <!-- Secondary: GitHub Code & Workflows -->
+          <a href="https://github.com/haroldpena" target="_blank" rel="noopener noreferrer" class="p-5 rounded-xl bg-ivory border border-borderwarm hover:border-tealbrand transition shadow-2xs flex flex-col justify-between group">
+            <div class="flex items-center justify-between mb-3">
+              <span data-i18n="contact_github_title" class="font-display font-bold text-sm text-slateink group-hover:text-tealbrand transition">Explore GitHub</span>
+              <svg class="w-5 h-5 text-slateink" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </div>
+            <p data-i18n="contact_github_desc" class="text-xs text-slatemuted leading-relaxed">
+              Check out open-source repositories, automated scientific tools, and code implementations.
+            </p>
+            <span class="text-xs font-medium text-tealbrand mt-4 inline-flex items-center gap-1 group-hover:underline">
+              github.com/haroldpena ↗
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-borderwarm py-8 text-center text-xs text-slatemuted bg-ivory">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 Harold A. Peña Herazo, Ph.D. · Hosted on GitHub Pages</p>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/haroldpena" target="_blank" rel="noopener noreferrer" class="hover:text-tealbrand transition">GitHub</a>
+        <a id="footer-linkedin-link" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-tealbrand transition">LinkedIn</a>
+        <a href="https://ui.adsabs.harvard.edu/public-libraries/Mb5YgS0QRT-NkTGuwfAMhw" target="_blank" rel="noopener noreferrer" class="hover:text-tealbrand transition">NASA ADS</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Translation Dictionaries & UI Scripts -->
+  <script>
+    const i18n = {
+      en: {
+        nav_about: "About",
+        nav_skills: "Expertise",
+        nav_projects: "Projects",
+        nav_experience: "Experience",
+        nav_publications: "Publications",
+        nav_contact: "Get in Touch",
+        hero_location: "Ljubljana, Slovenia · EU & Remote",
+        hero_title: "Physicist, Astronomer, and Data Scientist: Data analysis, pipelines, research & modelling.",
+        hero_bio: "Ph.D. in Physics & Astrophysics with 8+ years developing automated data processing pipelines, analyzing complex datasets, performing cutting-edge research, and diagnosing hardware instrument faults and performance.",
+        pill_pipelines: "Data Pipeline Automation",
+        pill_stats: "Statistical Data Analysis",
+        pill_sensors: "Sensor & Signal Analytics",
+        pill_timeseries: "Time Series & Risk Modeling",
+        btn_explore: "View Projects & Portfolio",
+        btn_contact: "Contact Options →",
+        skills_heading: "Technical Expertise",
+        skills_intro: "Combining physics research, pipeline automation, and statistical methods to analyze complex data and solve real-world problems.",
+        p1_title: "Data Pipeline Automation & ETL",
+        p1_desc: "Building modular, automated end-to-end data reduction pipelines using Python and Bash to calibrate, clean, and process multi-frequency observational datasets reliably.",
+        p2_title: "Signal Analytics & Hardware Diagnostics",
+        p2_desc: "Investigating instrument and sensor performance for submillimeter receivers and SCUBA-2 camera, identifying physical causes of signal anomalies to minimize operational downtime.",
+        p3_title: "Statistical Data Analysis & Modeling",
+        p3_desc: "Evaluating theoretical physical models against empirical multi-detector observations, catalog cross-matching, statistical analysis, numerical simulations, and rigorous uncertainty handling.",
+        stack_programming: "Programming & Data",
+        stack_engineering: "Engineering & Physics",
+        stack_item_automation: "Data Pipeline Automation",
+        stack_item_instruments: "Observational Instrumentation",
+        stack_item_troubleshooting: "Hardware Troubleshooting",
+        stack_item_stats: "Statistical Data Analysis",
+        stack_item_modeling: "Numerical Modeling",
+        stack_languages: "Languages",
+        lang_es_level: "Native",
+        lang_en_level: "Fluent",
+        lang_it_level: "Fluent",
+        lang_sl_level: "Beginner",
+        projects_heading: "Projects & Case Studies",
+        projects_intro: "Verified software pipelines, instrument systems work, and upcoming applied data science case studies.",
+        filter_all: "All Projects",
+        filter_completed: "Completed & Published",
+        filter_upcoming: "In Progress (Upcoming)",
+        proj_easyspec_tag: "Software Package · Published 2025",
+        status_completed: "Completed",
+        proj_easyspec_desc: "Open-source Python package automating calibration, noise subtraction, wavelength fitting, and spectral extraction of raw long-slit optical sensor data, replacing manual multi-step reductions with reproducible automated pipelines.",
+        lbl_capabilities: "Key Capabilities:",
+        proj_easyspec_caps: "Pipeline automation, signal calibration, reproducible optical and spectral data processing.",
+        lbl_published: "Published in:",
+        proj_jcmt_tag: "Operations & Performance · JCMT / EAO",
+        proj_jcmt_title: "Submillimeter Receiver Diagnostics & Pipeline Optimization",
+        proj_jcmt_desc: "Investigated signal and sensor performance for sub-millimeter heterodyne receivers and the SCUBA-2 camera at the James Clerk Maxwell Telescope. Identified physical root causes of signal anomalies to minimize operational downtime, and built automated Python and Bash data processing pipelines to handle multi-frequency data.",
+        proj_jcmt_caps: "Sensor anomaly diagnostics, hardware troubleshooting, multi-frequency pipeline optimization.",
+        lbl_institution: "Institution:",
+        link_exp_details: "Experience Details ↓",
+        proj_sycat_tag: "Catalog Cross-Matching & Classification",
+        proj_sycat_title: "Turin-SyCAT & High-Energy Cross-Matching",
+        proj_sycat_desc: "Conducted multi-frequency probabilistic cross-matching workflows combining gamma-ray, X-ray, optical, infrared, and radio survey data to classify unidentified high-energy sources and construct validated catalogs (Turin-SyCAT Releases I & II).",
+        proj_sycat_caps: "Statistical data analysis, multi-detector cross-matching, catalog validation.",
+        tag_upcoming_ts: "Time-Series & Forecasting",
+        status_in_dev: "In Development",
+        case_ts_title: "Time-Series Analysis & Multi-Horizon Forecasting",
+        case_ts_desc: "Technical case study focusing on time-series decomposition, statistical baselines, and predictive modeling for sequential datasets.",
+        lbl_status: "Status:",
+        case_ts_status: "Case study and methodology currently in development. Technical write-up and reproducible code repository will be published here upon completion.",
+        lbl_coming_soon: "Coming Soon",
+        tag_upcoming_satellite: "Remote Sensing & Satellite Data",
+        case_sat_title: "Satellite Data Analysis & Signal Analytics",
+        case_sat_desc: "Applying 8+ years of multi-detector astronomical imaging and calibration pipeline experience to satellite earth observation data processing and feature extraction.",
+        case_sat_status: "Case study and workflow pipeline currently being assembled and documented for public release.",
+        tag_upcoming_risk: "Quantitative & Risk Analysis",
+        case_risk_title: "Quantitative Risk Analysis & Modeling",
+        case_risk_desc: "Applying numerical modeling, probability distributions, and statistical validation techniques to quantitative risk metrics and backtesting frameworks.",
+        case_risk_status: "Analysis framework and benchmark experiments currently in progress.",
+        exp_heading: "Work Experience",
+        exp_role1: "Support Scientist & Postdoctoral Fellow",
+        exp_role1_b1: "Monitored and assisted in commissioning telescope instrumentation for submillimeter astronomy.",
+        exp_role1_b2: "Developed and optimized data processing pipelines using Python and Bash to handle multi-frequency datasets.",
+        exp_role1_b3: "Investigated data anomalies and instrument performance of sub-millimeter heterodyne receivers and the SCUBA-2 camera, identifying physical causes of signal anomalies to minimize operational downtime of the instruments.",
+        exp_role1_b4: "Collaborated with international engineering and scientific teams to validate instrument performance.",
+        exp_role2: "Postdoctoral Fellow",
+        exp_role2_b1: "Designed and executed astronomical observational experiments for different projects using data from optical, infrared, gamma-rays, X-rays, and radio frequency detectors.",
+        exp_role2_b2: "Evaluated theoretical physics predictions of the environments of active galaxies against observational data utilizing Python scripts.",
+        exp_role3: "Visiting Scientist",
+        exp_role3_b1: "Harvard-Smithsonian Center for Astrophysics (CfA): Invited to conduct research across multiple terms (2018, 2023).",
+        exp_role3_b2: "European Southern Observatory (ESO): Conducted research and data analysis contributing to large-scale international collaborations including the Fermi-LAT collaboration.",
+        edu_heading: "Education & Credentials",
+        edu_degree_phd: "Ph.D. in Physics & Astrophysics",
+        edu_supervisors: "Supervisors: Dr. Francesco Massaro (Univ. of Turin) & Dr. Vahram Chavushyan (INAOE)",
+        edu_degree_msc: "Master’s Degree in Astrophysics",
+        edu_degree_bsc: "Bachelor of Science in Physics",
+        memberships_title: "Scientific Collaborations & Service",
+        membership_eht: "• <strong>Event Horizon Telescope Collaboration (EHTC):</strong> Member (2024–Present)",
+        membership_fermi: "• <strong>Fermi-LAT Collaboration:</strong> Member (2017–2020)",
+        membership_referee: "• <strong>Peer Review:</strong> Referee for <em>MNRAS</em> and <em>ApJ</em>; Review Panelist for NASA NuSTAR time allocation.",
+        membership_soc: "• <strong>Memberships:</strong> International Astronomical Union (IAU), American Astronomical Society (AAS).",
+        pub_heading: "Selected Refereed Publications",
+        pub_intro: "29 peer-reviewed journal papers (8 as first or corresponding author, 2,209+ citations, h-index 12).",
+        pub_ads_link: "Full NASA ADS Bibliography ↗",
+        contact_badge: "Professional Inquiries & Networking",
+        contact_heading: "Let’s Connect",
+        contact_intro: "Open to discussing Data Science, Quantitative Analyst, and Signal/Pipeline roles, scientific collaborations, and technical initiatives. Based in Ljubljana, Slovenia (EU & Remote).",
+        contact_linkedin_title: "Connect on LinkedIn",
+        contact_linkedin_desc: "Message me directly on LinkedIn for career opportunities, inquiries, or research networking.",
+        contact_linkedin_cta: "Open Profile ↗",
+        contact_github_title: "Explore GitHub",
+        contact_github_desc: "Check out open-source repositories, automated scientific tools, and code implementations."
+      },
+      es: {
+        nav_about: "Sobre mí",
+        nav_skills: "Competencias",
+        nav_projects: "Proyectos",
+        nav_experience: "Experiencia",
+        nav_publications: "Publicaciones",
+        nav_contact: "Contacto",
+        hero_location: "Liubliana, Eslovenia · UE y Remoto",
+        hero_title: "Físico, Astrónomo y Científico de Datos: Análisis de datos, pipelines, investigación y modelado.",
+        hero_bio: "Doctor en Física y Astrofísica con más de 8 años desarrollando pipelines automatizados de procesamiento de datos, analizando datos complejos, realizando investigación de vanguardia y diagnosticando fallas y rendimiento en instrumentos de hardware.",
+        pill_pipelines: "Automatización de Pipelines",
+        pill_stats: "Análisis Estadístico de Datos",
+        pill_sensors: "Analítica de Señales y Sensores",
+        pill_timeseries: "Series de Tiempo y Modelado de Riesgo",
+        btn_explore: "Ver Proyectos y Portafolio",
+        btn_contact: "Opciones de Contacto →",
+        skills_heading: "Competencias Técnicas",
+        skills_intro: "Combinando investigación en física, automatización de pipelines y métodos estadísticos para analizar datos complejos y resolver problemas concretos.",
+        p1_title: "Automatización de Pipelines y ETL",
+        p1_desc: "Desarrollo de pipelines modulares y automatizados en Python y Bash para calibrar, limpiar y procesar sistemáticamente datos observacionales multifrecuencia.",
+        p2_title: "Analítica de Señales y Diagnóstico de Hardware",
+        p2_desc: "Investigación del rendimiento de sensores y receptores submilimétricos y la cámara SCUBA-2, identificando causas físicas de anomalías de señal para minimizar tiempos de inactividad.",
+        p3_title: "Análisis Estadístico y Modelado",
+        p3_desc: "Evaluación de modelos teóricos frente a observaciones empíricas multidetector, cruce de catálogos astronómicos, análisis estadístico, simulaciones numéricas y tratamiento riguroso de incertidumbres.",
+        stack_programming: "Programación y Datos",
+        stack_engineering: "Ingeniería y Física",
+        stack_item_automation: "Automatización de Pipelines",
+        stack_item_instruments: "Instrumentación Observacional",
+        stack_item_troubleshooting: "Diagnóstico de Hardware",
+        stack_item_stats: "Análisis Estadístico de Datos",
+        stack_item_modeling: "Modelado Numérico",
+        stack_languages: "Idiomas",
+        lang_es_level: "Nativo",
+        lang_en_level: "Fluido",
+        lang_it_level: "Fluido",
+        lang_sl_level: "Principiante",
+        projects_heading: "Proyectos y Casos de Estudio",
+        projects_intro: "Pipelines de software verificados, trabajo en sistemas instrumentales y próximos casos de estudio aplicados en ciencia de datos.",
+        filter_all: "Todos los Proyectos",
+        filter_completed: "Completados y Publicados",
+        filter_upcoming: "En Desarrollo (Próximamente)",
+        proj_easyspec_tag: "Paquete de Software · Publicado en 2025",
+        status_completed: "Completado",
+        proj_easyspec_desc: "Paquete de código abierto en Python para la calibración, reducción de ruido, ajuste de longitud de onda y extracción espectral de datos ópticos de rendija larga, convirtiendo reducciones manuales en pipelines reproducibles.",
+        lbl_capabilities: "Capacidades Clave:",
+        proj_easyspec_caps: "Automatización de pipelines, calibración de señales y procesamiento reproducible de datos ópticos y espectrales.",
+        lbl_published: "Publicado en:",
+        proj_jcmt_tag: "Operaciones y Rendimiento · JCMT / EAO",
+        proj_jcmt_title: "Diagnóstico de Receptores Submilimétricos y Optimización de Pipelines",
+        proj_jcmt_desc: "Investigación del rendimiento de señales y sensores en receptores heterodinos submilimétricos y la cámara SCUBA-2 en el Telescopio James Clerk Maxwell. Identificación de causas físicas de anomalías para minimizar inactividad, y desarrollo de pipelines en Python y Bash.",
+        proj_jcmt_caps: "Diagnóstico de anomalías en sensores, resolución de fallas de hardware y optimización de pipelines multifrecuencia.",
+        lbl_institution: "Institución:",
+        link_exp_details: "Detalles de Experiencia ↓",
+        proj_sycat_tag: "Cruce de Catálogos y Clasificación",
+        proj_sycat_title: "Turin-SyCAT y Cruce de Datos de Alta Energía",
+        proj_sycat_desc: "Desarrollo de flujos de trabajo probabilísticos de cruce multifrecuencia combinando datos de rayos gamma, rayos X, óptico, infrarrojo y radio para clasificar fuentes de alta energía no identificadas (Turin-SyCAT I y II).",
+        proj_sycat_caps: "Análisis estadístico de datos, cruce de múltiples detectores y validación de catálogos.",
+        tag_upcoming_ts: "Series de Tiempo y Pronóstico",
+        status_in_dev: "En Desarrollo",
+        case_ts_title: "Análisis de Series de Tiempo y Pronóstico Multihorizonte",
+        case_ts_desc: "Caso de estudio técnico centrado en descomposición de series de tiempo, líneas base estadísticas y modelado predictivo para datos secuenciales.",
+        lbl_status: "Estado:",
+        case_ts_status: "Caso de estudio y metodología actualmente en desarrollo. El informe técnico y repositorio reproducible se publicarán aquí al completarse.",
+        lbl_coming_soon: "Próximamente",
+        tag_upcoming_satellite: "Teledetección y Datos Satelitales",
+        case_sat_title: "Análisis de Datos Satelitales y Analítica de Señales",
+        case_sat_desc: "Aplicación de más de 8 años de experiencia en imágenes astronómicas multidetector y calibración de pipelines al procesamiento de datos de observación satelital de la Tierra.",
+        case_sat_status: "Pipeline y caso de estudio actualmente en preparación y documentación para su publicación.",
+        tag_upcoming_risk: "Análisis Cuantitativo y de Riesgo",
+        case_risk_title: "Modelado y Análisis Cuantitativo de Riesgo",
+        case_risk_desc: "Aplicación de modelado numérico, distribuciones probabilísticas y validación estadística a métricas de riesgo y marcos de backtesting.",
+        case_risk_status: "Marco analítico y experimentos comparativos actualmente en curso.",
+        exp_heading: "Experiencia Laboral",
+        exp_role1: "Científico de Soporte e Investigador Posdoctoral",
+        exp_role1_b1: "Monitoreo y asistencia en la puesta en marcha de instrumentación telescópica para astronomía submilimétrica.",
+        exp_role1_b2: "Desarrollo y optimización de pipelines de procesamiento de datos en Python y Bash para conjuntos de datos multifrecuencia.",
+        exp_role1_b3: "Investigación de anomalías y rendimiento instrumental en receptores heterodinos submilimétricos y la cámara SCUBA-2, identificando causas físicas para minimizar tiempos de inactividad.",
+        exp_role1_b4: "Colaboración con equipos científicos y de ingeniería internacionales para validar el rendimiento de los instrumentos.",
+        exp_role2: "Investigador Posdoctoral",
+        exp_role2_b1: "Diseño y ejecución de experimentos observacionales astronómicos utilizando datos de detectores ópticos, infrarrojos, rayos gamma, rayos X y radiofrecuencia.",
+        exp_role2_b2: "Evaluación de predicciones teóricas sobre el entorno de galaxias activas frente a datos observacionales mediante scripts en Python.",
+        exp_role3: "Científico Visitante",
+        exp_role3_b1: "Harvard-Smithsonian Center for Astrophysics (CfA): Invitado a realizar investigación en múltiples estancias (2018, 2023).",
+        exp_role3_b2: "European Southern Observatory (ESO): Investigación y análisis de datos contribuyendo a colaboraciones internacionales a gran escala, incluida Fermi-LAT.",
+        edu_heading: "Educación y Credenciales",
+        edu_degree_phd: "Doctorado en Física y Astrofísica",
+        edu_supervisors: "Directores: Dr. Francesco Massaro (Univ. de Turín) y Dr. Vahram Chavushyan (INAOE)",
+        edu_degree_msc: "Maestría en Astrofísica",
+        edu_degree_bsc: "Licenciatura en Física",
+        memberships_title: "Colaboraciones Científicas y Servicio",
+        membership_eht: "• <strong>Event Horizon Telescope Collaboration (EHTC):</strong> Miembro (2024–Presente)",
+        membership_fermi: "• <strong>Colaboración Fermi-LAT:</strong> Miembro (2017–2020)",
+        membership_referee: "• <strong>Revisión por Pares:</strong> Árbitro para <em>MNRAS</em> y <em>ApJ</em>; Evaluador en panel de tiempo de observación NASA NuSTAR.",
+        membership_soc: "• <strong>Membresías:</strong> Unión Astronómica Internacional (IAU), Sociedad Astronómica Americana (AAS).",
+        pub_heading: "Publicaciones Seleccionadas",
+        pub_intro: "29 artículos en revistas con revisión por pares (8 como primer autor o autor de correspondencia, más de 2.209 citas, índice h 12).",
+        pub_ads_link: "Bibliografía completa en NASA ADS ↗",
+        contact_badge: "Contacto Profesional y Redes",
+        contact_heading: "Conectemos",
+        contact_intro: "Disponible para conversar sobre oportunidades en Ciencia de Datos, Análisis Cuantitativo, desarrollo de pipelines, colaboraciones científicas e iniciativas técnicas. Con base en Liubliana, Eslovenia (UE y remoto).",
+        contact_linkedin_title: "Conectar en LinkedIn",
+        contact_linkedin_desc: "Escríbeme directamente en LinkedIn para oportunidades laborales, consultas o intercambio profesional.",
+        contact_linkedin_cta: "Abrir Perfil ↗",
+        contact_github_title: "Explorar GitHub",
+        contact_github_desc: "Revisa mis repositorios de código abierto, herramientas científicas automatizadas e implementaciones."
+      },
+      it: {
+        nav_about: "Chi sono",
+        nav_skills: "Competenze",
+        nav_projects: "Progetti",
+        nav_experience: "Esperienza",
+        nav_publications: "Pubblicazioni",
+        nav_contact: "Contatti",
+        hero_location: "Lubiana, Slovenia · UE e Remoto",
+        hero_title: "Fisico, Astronomo e Data Scientist: Analisi dati, pipeline, ricerca e modellazione.",
+        hero_bio: "Dottorato in Fisica e Astrofisica con oltre 8 anni di esperienza nello sviluppo di pipeline automatizzate per l'elaborazione dati, analisi di dataset complessi, ricerca avanzata e diagnosi di guasti e prestazioni di strumenti hardware.",
+        pill_pipelines: "Automazione Pipeline Dati",
+        pill_stats: "Analisi Statistica dei Dati",
+        pill_sensors: "Analisi di Segnali e Sensori",
+        pill_timeseries: "Serie Temporali e Modellazione del Rischio",
+        btn_explore: "Vedi Progetti e Portfolio",
+        btn_contact: "Opzioni di Contatto →",
+        skills_heading: "Competenze Tecniche",
+        skills_intro: "Unire ricerca in fisica, automazione di pipeline e metodi statistici per analizzare dati complessi e risolvere problemi reali.",
+        p1_title: "Automazione di Pipeline Dati ed ETL",
+        p1_desc: "Costruzione di pipeline modulari e automatizzate in Python e Bash per calibrare, pulire ed elaborare dataset osservativi multifrequenza in modo affidabile.",
+        p2_title: "Analisi dei Segnali e Diagnostica Hardware",
+        p2_desc: "Indagine sulle prestazioni di sensori e ricevitori submillimetrici e della camera SCUBA-2, identificando le cause fisiche delle anomalie per ridurre al minimo i tempi di inattività.",
+        p3_title: "Analisi Statistica e Modellazione",
+        p3_desc: "Valutazione di modelli teorici rispetto a osservazioni empiriche multi-rivelatore, cross-matching di cataloghi, analisi statistica, simulazioni numeriche e gestione rigorosa delle incertezze.",
+        stack_programming: "Programmazione e Dati",
+        stack_engineering: "Ingegneria e Fisica",
+        stack_item_automation: "Automazione Pipeline Dati",
+        stack_item_instruments: "Strumentazione Osservativa",
+        stack_item_troubleshooting: "Diagnostica Hardware",
+        stack_item_stats: "Analisi Statistica dei Dati",
+        stack_item_modeling: "Modellazione Numerica",
+        stack_languages: "Lingue",
+        lang_es_level: "Madrelingua",
+        lang_en_level: "Fluente",
+        lang_it_level: "Fluente",
+        lang_sl_level: "Principiante",
+        projects_heading: "Progetti e Casi di Studio",
+        projects_intro: "Pipeline software verificate, interventi su strumentazione e prossimi casi di studio applicati in data science.",
+        filter_all: "Tutti i Progetti",
+        filter_completed: "Completati e Pubblicati",
+        filter_upcoming: "In Sviluppo (Prossimamente)",
+        proj_easyspec_tag: "Pacchetto Software · Pubblicato nel 2025",
+        status_completed: "Completato",
+        proj_easyspec_desc: "Pacchetto Python open source per la calibrazione, sottrazione del rumore, calibrazione in lunghezza d'onda ed estrazione spettrale di dati ottici a fenditura lunga, sostituendo le riduzioni manuali con pipeline riproducibili.",
+        lbl_capabilities: "Competenze Chiave:",
+        proj_easyspec_caps: "Automazione pipeline, calibrazione dei segnali ed elaborazione riproducibile di dati ottici e spettrali.",
+        lbl_published: "Pubblicato su:",
+        proj_jcmt_tag: "Operazioni e Prestazioni · JCMT / EAO",
+        proj_jcmt_title: "Diagnostica Ricevitori Submillimetrici e Ottimizzazione Pipeline",
+        proj_jcmt_desc: "Indagine sulle prestazioni di sensori e segnali per i ricevitori eterodina submillimetrici e la camera SCUBA-2 al telescopio James Clerk Maxwell. Isolamento delle cause fisiche di anomalia e sviluppo di pipeline automatiche in Python e Bash.",
+        proj_jcmt_caps: "Diagnostica anomalie dei sensori, risoluzione problemi hardware e ottimizzazione pipeline multifrequenza.",
+        lbl_institution: "Istituzione:",
+        link_exp_details: "Dettagli Esperienza ↓",
+        proj_sycat_tag: "Cross-Matching di Cataloghi e Classificazione",
+        proj_sycat_title: "Turin-SyCAT e Cross-Matching ad Alta Energia",
+        proj_sycat_desc: "Flussi di lavoro probabilistici per il cross-matching multifrequenza tra cataloghi di raggi gamma, raggi X, ottici, infrarossi e radio per classificare sorgenti non identificate (Turin-SyCAT I e II).",
+        proj_sycat_caps: "Analisi statistica dei dati, cross-matching multi-rivelatore e validazione di cataloghi.",
+        tag_upcoming_ts: "Serie Temporali e Previsioni",
+        status_in_dev: "In Sviluppo",
+        case_ts_title: "Analisi delle Serie Temporali e Previsione Multi-Orizzonte",
+        case_ts_desc: "Caso di studio tecnico incentrato sulla scomposizione di serie temporali, baseline statistiche e modelli predittivi per dati sequenziali.",
+        lbl_status: "Stato:",
+        case_ts_status: "Caso di studio e metodologia attualmente in sviluppo. La relazione tecnica e il repository di codice riproducibile saranno pubblicati qui al completamento.",
+        lbl_coming_soon: "Prossimamente",
+        tag_upcoming_satellite: "Telerilevamento e Dati Satellitari",
+        case_sat_title: "Analisi dei Dati Satellitari e Analitica dei Segnali",
+        case_sat_desc: "Applicazione di oltre 8 anni di esperienza nell'elaborazione di immagini astronomiche e pipeline di calibrazione all'osservazione satellitare della Terra.",
+        case_sat_status: "Caso di studio e pipeline attualmente in fase di assemblaggio e documentazione per il rilascio pubblico.",
+        tag_upcoming_risk: "Analisi Quantitativa e del Rischio",
+        case_risk_title: "Modellazione e Analisi Quantitativa del Rischio",
+        case_risk_desc: "Applicazione di modellazione numerica, distribuzioni probabilistiche e convalida statistica a metriche di rischio e framework di backtesting.",
+        case_risk_status: "Framework di analisi ed esperimenti di benchmark attualmente in corso.",
+        exp_heading: "Esperienza Lavorativa",
+        exp_role1: "Support Scientist e Assegnista di Ricerca",
+        exp_role1_b1: "Monitoraggio e supporto alla messa in servizio della strumentazione per astronomia submillimetrica.",
+        exp_role1_b2: "Sviluppo e ottimizzazione di pipeline di elaborazione dati in Python e Bash per dataset multifrequenza.",
+        exp_role1_b3: "Indagine sulle anomalie dei dati e sulle prestazioni dei ricevitori eterodina submillimetrici e della camera SCUBA-2, identificando cause fisiche per ridurre i tempi di fermo.",
+        exp_role1_b4: "Collaborazione con team scientifici e ingegneristici internazionali per validare le prestazioni degli strumenti.",
+        exp_role2: "Assegnista di Ricerca Postdoc",
+        exp_role2_b1: "Progettazione ed esecuzione di esperimenti osservativi astronomici utilizzando dati da rivelatori ottici, infrarossi, raggi gamma, raggi X e radiofrequenza.",
+        exp_role2_b2: "Valutazione di modelli teorici sull'ambiente delle galassie attive rispetto ai dati osservativi tramite script Python.",
+        exp_role3: "Visiting Scientist",
+        exp_role3_b1: "Harvard-Smithsonian Center for Astrophysics (CfA): Invitato a svolgere ricerca in più periodi (2018, 2023).",
+        exp_role3_b2: "European Southern Observatory (ESO): Ricerca e analisi dati contribuendo a collaborazioni internazionali su larga scala tra cui Fermi-LAT.",
+        edu_heading: "Formazione e Titoli",
+        edu_degree_phd: "Dottorato in Fisica e Astrofisica",
+        edu_supervisors: "Supervisori: Prof. Francesco Massaro (Univ. di Torino) e Dott. Vahram Chavushyan (INAOE)",
+        edu_degree_msc: "Laurea Magistrale in Astrofisica",
+        edu_degree_bsc: "Laurea Triennale in Fisica",
+        memberships_title: "Collaborazioni Scientifiche e Servizio",
+        membership_eht: "• <strong>Event Horizon Telescope Collaboration (EHTC):</strong> Membro (2024–Presente)",
+        membership_fermi: "• <strong>Fermi-LAT Collaboration:</strong> Membro (2017–2020)",
+        membership_referee: "• <strong>Peer Review:</strong> Referee per <em>MNRAS</em> e <em>ApJ</em>; Valutatore per commissioni NASA NuSTAR.",
+        membership_soc: "• <strong>Affiliazioni:</strong> Unione Astronomica Internazionale (IAU), American Astronomical Society (AAS).",
+        pub_heading: "Pubblicazioni Selezionate",
+        pub_intro: "29 articoli con revisione paritaria (8 come primo autore o corresponding author, oltre 2.209 citazioni, h-index 12).",
+        pub_ads_link: "Bibliografia completa NASA ADS ↗",
+        contact_badge: "Richieste Professionali e Networking",
+        contact_heading: "Mettiamoci in Contatto",
+        contact_intro: "Disponibile per opportunità in Data Science, Analisi Quantitativa, sviluppo di pipeline, collaborazioni scientifiche e progetti tecnici. Con sede a Lubiana, Slovenia (UE e remoto).",
+        contact_linkedin_title: "Collegati su LinkedIn",
+        contact_linkedin_desc: "Inviami un messaggio diretto su LinkedIn per opportunità di lavoro, domande o contatti professionali.",
+        contact_linkedin_cta: "Apri Profilo ↗",
+        contact_github_title: "Esplora GitHub",
+        contact_github_desc: "Consulta i repository open-source, gli strumenti scientifici automatizzati e le implementazioni di codice."
+      },
+      sl: {
+        nav_about: "O meni",
+        nav_skills: "Strokovnost",
+        nav_projects: "Projekti",
+        nav_experience: "Izkušnje",
+        nav_publications: "Publikacije",
+        nav_contact: "Stik",
+        hero_location: "Ljubljana, Slovenija · EU in na daljavo",
+        hero_title: "Fizik, astronom in podatkovni znanstvenik: Analiza podatkov, podatkovni cevovodi, raziskave in modeliranje.",
+        hero_bio: "Doktor fizike in astrofizike z več kot 8 leti izkušenj z razvojem avtomatiziranih podatkovnih cevovodov, analizo kompleksnih podatkov, vrhunskimi raziskavami ter diagnosticiranjem napak in delovanja instrumentov.",
+        pill_pipelines: "Avtomatizacija podatkovnih cevovodov",
+        pill_stats: "Statistična analiza podatkov",
+        pill_sensors: "Analitika signalov in senzorjev",
+        pill_timeseries: "Časovne vrste in modeliranje tveganja",
+        btn_explore: "Ogled projektov in portfelja",
+        btn_contact: "Možnosti stika →",
+        skills_heading: "Tehnična strokovnost",
+        skills_intro: "Povezovanje fizikalnih raziskav, avtomatizacije podatkovnih tokov in statističnih metod za analizo zahtevnih podatkov in reševanje realnih izzivov.",
+        p1_title: "Avtomatizacija podatkovnih cevovodov in ETL",
+        p1_desc: "Razvoj modularnih, avtomatiziranih cevovodov v Pythonu in Bashu za zanesljivo umerjanje, čiščenje in obdelavo večfrekvenčnih opazovalnih podatkov.",
+        p2_title: "Analitika signalov in diagnostika strojne opreme",
+        p2_desc: "Preiskovanje delovanja instrumentov in senzorjev za submilimetrske sprejemnike ter kamero SCUBA-2 z ugotavljanjem fizikalnih vzrokov anomalij za zmanjšanje izpadov.",
+        p3_title: "Statistična analiza podatkov in modeliranje",
+        p3_desc: "Preverjanje teoretičnih fizikalnih modelov z empiričnimi opazovanji, navzkrižno primerjanje katalogov, statistična analiza, numerične simulacije in obravnava negotovosti.",
+        stack_programming: "Programiranje in podatki",
+        stack_engineering: "Inženiring in fizika",
+        stack_item_automation: "Avtomatizacija podatkovnih cevovodov",
+        stack_item_instruments: "Opazovalna instrumentacija",
+        stack_item_troubleshooting: "Odpravljanje napak na strojni opremi",
+        stack_item_stats: "Statistična analiza podatkov",
+        stack_item_modeling: "Numerično modeliranje",
+        stack_languages: "Jeziki",
+        lang_es_level: "Materni jezik",
+        lang_en_level: "Tekoče",
+        lang_it_level: "Tekoče",
+        lang_sl_level: "Začetnik",
+        projects_heading: "Projekti in študije primerov",
+        projects_intro: "Preverjeni programski cevovodi, delo na sistemih instrumentacije in prihajajoče aplikativne študije s področja podatkovne znanosti.",
+        filter_all: "Vsi projekti",
+        filter_completed: "Zaključeni in objavljeni",
+        filter_upcoming: "V razvoju (kmalu)",
+        proj_easyspec_tag: "Programski paket · Objavljeno 2025",
+        status_completed: "Zaključeno",
+        proj_easyspec_desc: "Odprtokodni paket v Pythonu za umerjanje, odstranjevanje šuma, umerjanje valovnih dolžin in spektralno ekstrakcijo podatkov optične spektroskopije z dolgo režo.",
+        lbl_capabilities: "Ključne zmogljivosti:",
+        proj_easyspec_caps: "Avtomatizacija cevovodov, umerjanje signalov in ponovljiva obdelava optičnih in spektralnih podatkov.",
+        lbl_published: "Objavljeno v:",
+        proj_jcmt_tag: "Delovanje in zmogljivost · JCMT / EAO",
+        proj_jcmt_title: "Diagnostika submilimetrskih sprejemnikov in optimizacija cevovodov",
+        proj_jcmt_desc: "Preiskovanje signalov in delovanja senzorjev za submilimetrske heterodinske sprejemnike in kamero SCUBA-2 na teleskopu James Clerk Maxwell z odpravo vzrokov anomalij in razvojem cevovodov v Pythonu in Bashu.",
+        proj_jcmt_caps: "Diagnostika anomalij senzorjev, odpravljanje napak na strojni opremi in optimizacija večfrekvenčnih cevovodov.",
+        lbl_institution: "Ustanova:",
+        link_exp_details: "Podrobnosti izkušenj ↓",
+        proj_sycat_tag: "Primerjava katalogov in klasifikacija",
+        proj_sycat_title: "Turin-SyCAT in večfrekvenčna primerjava visokoenergijskih virov",
+        proj_sycat_desc: "Verjetnostni delovni tokovi za navzkrižno primerjavo podatkov gama žarkov, rentgenskih, optičnih, infrardečih in radijskih pregledov neba za klasifikacijo neidentificiranih virov (Turin-SyCAT I in II).",
+        proj_sycat_caps: "Statistična analiza podatkov, primerjava med več detektorji in validacija katalogov.",
+        tag_upcoming_ts: "Časovne vrste in napovedovanje",
+        status_in_dev: "V razvoju",
+        case_ts_title: "Analiza časovnih vrst in večstopenjsko napovedovanje",
+        case_ts_desc: "Tehnična študija primera, osredotočena na razgradnjo časovnih vrst, statistične osnove in napovedno modeliranje za zaporedne nabore podatkov.",
+        lbl_status: "Stanje:",
+        case_ts_status: "Študija primera in metodologija sta v razvoju. Tehnični zapis in ponovljiva koda bosta objavljena tukaj po zaključku.",
+        lbl_coming_soon: "Kmalu",
+        tag_upcoming_satellite: "Daljinsko zaznavanje in satelitski podatki",
+        case_sat_title: "Analiza satelitskih podatkov in analitika signalov",
+        case_sat_desc: "Prenos več kot 8 let izkušenj z obdelavo astronomskih slik in umerjanjem instrumentov na obdelavo podatkov satelitskega opazovanja Zemlje.",
+        case_sat_status: "Cevovod in študija primera sta trenutno v pripravi in dokumentiranju za javno objavo.",
+        tag_upcoming_risk: "Kvantitativna analiza in analiza tveganj",
+        case_risk_title: "Kvantitativno modeliranje in analiza tveganj",
+        case_risk_desc: "Uporaba numeričnega modeliranja, verjetnostnih porazdelitev in statistične validacije pri metrikah tveganja in preizkušanju za nazaj.",
+        case_risk_status: "Analitični okvir in primerjalni eksperimenti so v teku.",
+        exp_heading: "Delovne izkušnje",
+        exp_role1: "Podporni znanstvenik in podoktorski raziskovalec",
+        exp_role1_b1: "Nadzor in pomoč pri zagonu teleskopske instrumentacije za submilimetrsko astronomijo.",
+        exp_role1_b2: "Razvoj in optimizacija cevovodov za obdelavo večfrekvenčnih podatkov v Pythonu in Bashu.",
+        exp_role1_b3: "Preiskovanje anomalij podatkov in delovanja instrumentov submilimetrskih sprejemnikov ter kamere SCUBA-2 za zmanjšanje izpadov opazovanj.",
+        exp_role1_b4: "Sodelovanje z mednarodnimi inženirskimi in znanstvenimi ekipami pri validaciji delovanja instrumentov.",
+        exp_role2: "Podoktorski raziskovalec",
+        exp_role2_b1: "Zasnova in izvedba astronomskih opazovalnih eksperimentov z uporabo podatkov optičnih, infrardečih, gama, rentgenskih in radijskih detektorjev.",
+        exp_role2_b2: "Vrednotenje teoretičnih fizikalnih napovedi okolij aktivnih galaksij glede na opazovalne podatke s skripti v Pythonu.",
+        exp_role3: "Gostujoči znanstvenik",
+        exp_role3_b1: "Harvard-Smithsonian Center for Astrophysics (CfA): Vabilo k raziskavam v več obdobjih (2018, 2023).",
+        exp_role3_b2: "Evropski južni observatorij (ESO): Raziskovalno delo in analiza podatkov v mednarodnih sodelovanjih, vključno s Fermi-LAT.",
+        edu_heading: "Izobrazba in kvalifikacije",
+        edu_degree_phd: "Doktorat iz fizike in astrofizike",
+        edu_supervisors: "Mentorja: dr. Francesco Massaro (Univerza v Torinu) in dr. Vahram Chavushyan (INAOE)",
+        edu_degree_msc: "Magisterij iz astrofizike",
+        edu_degree_bsc: "Diploma iz fizike",
+        memberships_title: "Znanstvena sodelovanja in delovanje",
+        membership_eht: "• <strong>Event Horizon Telescope Collaboration (EHTC):</strong> Član (2024–danes)",
+        membership_fermi: "• <strong>Fermi-LAT Collaboration:</strong> Član (2017–2020)",
+        membership_referee: "• <strong>Recenzent:</strong> Recenzent za <em>MNRAS</em> in <em>ApJ</em>; Član ocenjevalne komisije NASA NuSTAR.",
+        membership_soc: "• <strong>Članstva:</strong> Mednarodna astronomska zveza (IAU), Ameriško astronomsko društvo (AAS).",
+        pub_heading: "Izbrane recenzirane publikacije",
+        pub_intro: "29 člankov v mednarodnih recenziranih revijah (8 kot prvi ali dopisni avtor, več kot 2.209 citatov, h-indeks 12).",
+        pub_ads_link: "Celotna bibliografija na NASA ADS ↗",
+        contact_badge: "Poslovna vprašanja in mreženje",
+        contact_heading: "Stopimo v stik",
+        contact_intro: "Odprt za pogovor o vlogah s področja podatkovne znanosti, kvantitativne analize in cevovodov, znanstvenih sodelovanjih ter tehničnih projektih. Ljubljana, Slovenija (EU in na daljavo).",
+        contact_linkedin_title: "Povežite se na LinkedInu",
+        contact_linkedin_desc: "Pišite mi neposredno na LinkedInu glede kariernih priložnosti, vprašanj ali strokovnega mreženja.",
+        contact_linkedin_cta: "Odpri profil ↗",
+        contact_github_title: "Raziščite GitHub",
+        contact_github_desc: "Oglejte si odprtokodne repozitorije, avtomatizirana orodja in programske rešitve."
+      }
+    };
+
+    const flagMap = {
+      en: "🇬🇧",
+      es: "🇪🇸",
+      it: "🇮🇹",
+      sl: "🇸🇮"
+    };
+
+    function setLanguage(lang) {
+      if (!i18n[lang]) return;
+      document.documentElement.lang = lang;
+      localStorage.setItem("preferred_lang", lang);
+
+      const flag = flagMap[lang] || "🇬🇧";
+      const codeSpan = document.getElementById("current-lang-code");
+      const flagSpan = document.getElementById("current-lang-flag");
+      if (codeSpan) codeSpan.textContent = lang.toUpperCase();
+      if (flagSpan) flagSpan.textContent = flag;
+
+      // Update active state in mobile lang buttons
+      document.querySelectorAll(".lang-option-mobile").forEach(b => {
+        if (b.getAttribute("data-lang") === lang) {
+          b.classList.remove("bg-white", "text-slateink");
+          b.classList.add("bg-tealbrand", "text-white");
+        } else {
+          b.classList.remove("bg-tealbrand", "text-white");
+          b.classList.add("bg-white", "text-slateink");
+        }
+      });
+
+      // Update text in elements with data-i18n
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (i18n[lang][key]) {
+          el.innerHTML = i18n[lang][key];
+        }
+      });
+    }
+
+    // Language switcher event listeners
+    const langBtn = document.getElementById("lang-menu-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    if (langBtn && langMenu) {
+      langBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        langMenu.classList.toggle("hidden");
+      });
+
+      document.addEventListener("click", () => {
+        langMenu.classList.add("hidden");
+      });
+
+      document.querySelectorAll(".lang-option").forEach(opt => {
+        opt.addEventListener("click", () => {
+          const lang = opt.getAttribute("data-lang");
+          setLanguage(lang);
+          langMenu.classList.add("hidden");
+        });
+      });
+    }
+
+    document.querySelectorAll(".lang-option-mobile").forEach(opt => {
+      opt.addEventListener("click", () => {
+        const lang = opt.getAttribute("data-lang");
+        setLanguage(lang);
+      });
+    });
+
+    // Initialize preferred language from localStorage or default to English
+    const savedLang = localStorage.getItem("preferred_lang") || "en";
+    setLanguage(savedLang);
+
+    // Project category filter
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const projectCards = document.querySelectorAll(".project-card");
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const filter = btn.getAttribute("data-filter");
+
+        filterButtons.forEach(b => {
+          b.classList.remove("bg-tealbrand", "text-white", "border-tealbrand", "active", "shadow-2xs");
+          b.classList.add("bg-white", "text-slatemuted", "border-borderwarm");
+        });
+
+        btn.classList.remove("bg-white", "text-slatemuted", "border-borderwarm");
+        btn.classList.add("bg-tealbrand", "text-white", "border-tealbrand", "active", "shadow-2xs");
+
+        projectCards.forEach(card => {
+          const category = card.getAttribute("data-category");
+          if (filter === "all" || category === filter) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+
+    // Mobile Navigation Toggle
+    const mobileBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      document.querySelectorAll(".mobile-nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    }
+  </script>
+</body>
 </html>
